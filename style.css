@@ -1,8 +1,13 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #222831;
 }
 
 #profileDiv {
+    max-width: 500px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,4 +15,18 @@ body {
 }
 #profileMain {
     max-width: 340px;
+}
+
+.my-div {
+  /* 2. Apply the 9-slice image */
+  border-image-source: url('custom-border.png');
+  
+  /* 3. Define the slices (30 pixels from all edges) and fill the center */
+  border-image-slice: 200 200 200 200 fill; 
+  
+  /* 4. Match the border width */
+  border-image-width: 20px;
+  
+  /* 5. How the edges should scale */
+  border-image-repeat: stretch; 
 }
