@@ -1,26 +1,13 @@
-div {
-    height: 150px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+body {
+    background-color: #222831;
 }
 
 #profileDiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px black solid;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 5px;
-    margin: 0;
+    padding: 0;
 }
-
-#profilePicture {
-    height: 150px;
-    border-radius: 15px;
-}
-
-#profileChart {
-    height: 150px;
+#profileMain {
+    max-width: 340px;
 }
