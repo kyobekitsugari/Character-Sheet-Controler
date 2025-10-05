@@ -18,7 +18,7 @@ body {
     max-width: 340px;
 }
 
-.my-div {
+#tabsDiv {
     display: flex;
     height: 400px;
     padding: 0;
@@ -34,8 +34,15 @@ body {
     flex-grow: 1;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     font-family: 'Jaini', sans-serif;
     font-size: 12px;
+}
+
+#buttonsDiv div {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
 }
