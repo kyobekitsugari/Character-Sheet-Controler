@@ -20,11 +20,12 @@ body {
 
 #tabsDiv {
     display: flex;
-    height: 400px;
+    flex-direction: column;
+    min-height: 50px;
     padding: 0;
     margin: 0;
-    border-image-source: url('Tab Expertises.png');
-    border-image-slice: 125 fill; 
+    border-image-source: url('Tab Status.png');
+    border-image-slice: 150 fill; 
     border-image-width: 20px;
     border-image-repeat: stretch; 
 }
@@ -32,6 +33,7 @@ body {
 #buttonsDiv {
     display: flex;
     flex-grow: 1;
+    max-height: 15px;
     padding: 0;
     margin: 0;
     justify-content: space-between;
@@ -45,4 +47,14 @@ body {
     flex-grow: 1;
     flex-basis: 0;
     justify-content: center;
+}
+
+.tabHolder {
+    display: none;
+    padding: 5px;
+}
+
+#statusHolder {
+    display: flex;
+    flex-direction: column;
 }
