@@ -3,19 +3,48 @@ body {
     flex-direction: column;
     justify-self: center;
     gap: 10px;
-    max-width: 340px;
+    width: 340px;
     background-color: #222831;
 }
 
 #profileDiv {
     display: flex;
+    flex-grow: 1;
     align-items: center;
-    justify-content: center;
-    padding: 0;
+    justify-content: left;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+    font-family: 'Jaini', sans-serif;
+    border-image-source: url('Profile Background.png');
+    border-image-slice: 100 fill; 
+    border-image-width: 20px;
+    border-image-repeat: stretch; 
 }
 
-#profileMain {
-    max-width: 340px;
+#profileInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+#fastInfos {
+    display: flex;
+    gap: 10px;
+}
+
+#fastInfos div {
+    display: flex;
+    flex-direction: column;
+}
+
+#profilePicture {
+    height: 120px;
+}
+
+#profileName {
+    font-size: 24px;
 }
 
 #tabsDiv {
@@ -52,9 +81,13 @@ body {
 .tabHolder {
     display: none;
     padding: 5px;
+    flex-grow: 1;
+    font-family: 'Jaini', sans-serif;
+    color: white;
 }
 
 #statusHolder {
     display: flex;
     flex-direction: column;
+
 }
